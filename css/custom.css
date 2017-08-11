@@ -1,0 +1,15 @@
+body {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#logo {
+    min-width: 50%;
+    max-width: 80%;
+}
+
+#headline {
+    font-size: 1.4em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
