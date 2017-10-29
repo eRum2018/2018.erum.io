@@ -21,6 +21,22 @@
     width: 100%;
 }
 
+#twnews ol.carousel-indicators {
+    margin-top: -25px;
+    width: 50%;
+}
+#twnews ol.carousel-indicators li {
+    background-color: #ddd;
+}
+#twnews ol.carousel-indicators li.active {
+    background-color: #444;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .sidebar {
     float:right;
 }
