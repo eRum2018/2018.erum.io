@@ -1,0 +1,258 @@
+#footer {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.credit {
+    margin-top: 20px;
+    text-align:center
+}
+
+.thumbnail {
+    float: right;
+    margin: 15px;
+    margin-top: -10px;
+}
+
+.carousel {
+    width: 550px;
+}
+.carousel div.carousel-inner div.item img {
+    width: 100%;
+}
+
+.sidebar {
+    float:right;
+}
+
+.subhead {
+    Background: #000;
+    background-image: url('images/budapest-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 45px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.shadowed {
+    opacity: 0.8;
+    box-shadow:10px 10px 10px #000;
+    -webkit-box-shadow:10px 10px 10px #000;
+    -moz-box-shadow: 10px 10px 10px #000;
+}
+
+.subhead h1 {
+    font-size: 60px;
+    padding-bottom: 15px;
+}
+
+.subhead .lead {
+    padding-top: 75px;
+    margin-bottom: -25px;
+    text-align: center;
+}
+
+.subhead p {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+#logodiv {
+    text-align: center;
+}
+#logodiv img {
+    max-width: 75%;
+    margin-bottom: 10px;
+}
+
+.nav li a {
+    color: #003399;
+}
+
+.affix {
+    top: 10px;
+}
+
+#emptyness {
+    height: 20px;
+
+}
+
+#regscreenshot{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+section {
+    padding-top: 10px;
+}
+
+@media all and (max-width:779px){
+    .affix {
+	position: static;
+    }
+    .subhead h1 {
+	font-size: 32px;
+    }
+    
+    .subhead p {
+	font-size: 24px;
+	font-weight: 300;
+    }
+
+    #sponsors li{
+	width: 200px;
+	margin: auto;
+    }
+    .carousel {
+        width: 100% !important;
+    }
+
+}
+
+@media all and (max-width:479px){
+    .subhead, .media-object {
+	display: none;
+    }
+    .carousel {
+        width: 100% !important;
+    }
+}
+
+.media-object{
+    width: 64px;
+    margin-right: 25px;
+}
+
+
+.speaker {
+    text-align: center;
+    margin-top: 15px;
+}
+.speaker .speaker-photo {
+    width: 40%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.speaker .speaker-photo img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.speaker .speaker-name {
+    padding-top: 10px;
+    font-size: 2em;
+}
+.speaker .speaker-affiliation {
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+.speaker .speaker-bio {
+    display: none;
+}
+.speaker .speaker-social {
+    padding: 5px;
+}
+
+#speakers .speaker .speaker-photo {
+    width: 50%;
+}
+#speakers .speaker .speaker-name {
+    font-size: 1.75em;
+}
+#speakers .speaker .speaker-affiliation {
+    font-size: 1.3em;
+}
+
+#sponsors {
+    text-align: center;
+}
+#sponsors h1,h3,p {
+    text-align: left;
+}
+#sponsors img {
+    padding: 5px;
+}
+#sponsors img.platinum {
+    width: 500px;
+}
+#sponsors img.gold {
+    width: 400px;
+}
+#sponsors img.silver {
+    width: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#sponsors img.bronze {
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.talk {
+    color: #08c;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.abstract {
+    display: none;
+    background-color: #ddd;
+    margin-top: 15px;
+    border: 2px solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.session-title {
+    font-weight: bolder;
+}
+.session-talk {
+    margin-left: 15px;
+}
+.session-talk:before {
+    color: black;
+    float: left;
+    margin: 0 0 0 -1em;
+    width: 1em;
+    content: '\2022';
+}
+.session-abstract {
+    display: none;
+    margin-bottom: 10px;
+}
+
+/* Mailchimp form overrides */
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica,Arial,sans-serif;
+}
+#mc_embed_signup form {
+    text-align: center;
+}
+#mc_embed_signup .button  {
+    //margin-top: 15px;
+}
+#mc_embed_signup form input {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 5px;
+    width: 15%;
+}
