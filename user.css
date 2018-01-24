@@ -81,6 +81,7 @@
 
 #logodiv {
     text-align: center;
+    margin-top: 15px;
 }
 #logodiv img {
     max-width: 75%;
@@ -285,8 +286,20 @@ section {
     text-decoration: none;
     display: block;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 .formsubmit:hover {
     color: black;
     text-decoration: none;
+}
+
+.nobold {
+    font-weight: 100;
+}
+
+@media (min-width:800px) {
+    .modal {
+        width: 750px;
+        left: 40%;
+    }
 }
