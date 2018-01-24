@@ -81,6 +81,7 @@
 
 #logodiv {
     text-align: center;
+    margin-top: 15px;
 }
 #logodiv img {
     max-width: 75%;
