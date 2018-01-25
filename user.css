@@ -303,3 +303,10 @@ section {
         left: 40%;
     }
 }
+
+.modal {
+    height: 80%;
+}
+.modal-body {
+    max-height: 85%;
+}
