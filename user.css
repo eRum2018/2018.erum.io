@@ -81,11 +81,11 @@
 
 #logodiv {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 #logodiv img {
     max-width: 75%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .nav li a {
