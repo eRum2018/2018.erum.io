@@ -303,3 +303,15 @@ section {
         left: 40%;
     }
 }
+
+.carousel-control {
+    top: 0px;
+    margin-top: -40px;
+}
+.carousel-inner {
+    margin-top: 40px;
+    margin-left: 25px;
+}
+.carousel-indicators {
+    margin-top: -35px !important;
+}
