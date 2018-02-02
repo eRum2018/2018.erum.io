@@ -315,3 +315,9 @@ section {
 .carousel-indicators {
     margin-top: -35px !important;
 }
+
+.button-workaround {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: -10px;
+}
