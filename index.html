@@ -770,33 +770,427 @@
                         </section>
 
                         <!-- <p>Please find below the not yet complete list of speakers, which is to be updated on a regular basis after sorting out some of the logistics:</p> -->
-                        <!--
-                            <section id="workshops">
-                                <div class="page-header">
-                                    <h1>Workshops</h1>
-                                </div>
+                        
+                        <section id="workshops">
+                            <div class="page-header">
+                                <h1>Workshops</h1>
+                            </div>
 
-                                <p>There is no separate extra fee for attending workshops, you just need to register for the conference. We encourage everyone to attend so that we take full advantage of our capacity. The list of <i>planned</i> 2x1.5 hours long workshops/tutorials:</p>
+                            <p>There is no separate extra fee for attending workshops, you just need to register for the conference. We encourage everyone to attend so that we take full advantage of our capacity. The list of <i>planned</i> 2x1.5 hours long workshops/tutorials:</p>
 
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr><th>Title</th><th>Presenter</th></tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="talk">
-                                            <td>TODO title<a class="slides" href="TODO URL" target="_blank"><i class="icon-download-alt"></i></a></td>
-                                            <td>TODO speaker name</td>
-                                        </tr>
-                                        <tr class="abstract"><td colspan="2">
-                                                <p>TODO</p>
-                                        </td></tr>
-                                    </tbody>
-                                </table>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr><th>Title</th><th>Presenter</th></tr>
+                                </thead>
+                                <tbody>
+									<tr class="talk">
+									  <td>
+									    Plotting spatial data in R
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Martijn Tennekes</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>In this workshop you will learn how to plot spatial data in R by using the **tmap** package. This package is an implementation of the grammar of graphics for thematic maps, and resembles the syntax of **ggplot2**. This package is useful for both *exploration* and *publication* of spatial data, and offers both *static* and *interactive* plotting.
 
-                                <p>Please note that no computers will be provided at the workshops, so we recommend bringing your own computer.</p>
+									For those of you who are unfamiliar with spatial data in R, we will briefly introduce the fundamental packages for spatial data, which are **sf**, **sp**, and **raster**. With demonstrations and exercises, you will learn how to process spatial objects from various types (polygons, points, lines, rasters, and simple features), and how to plot them. Feel free to bring your own spatial data.
 
-                            </section>
-                            -->
+									Besides plotting spatial data, we will also discuss the possibilities of *publication*. Maps created with **tmap** can be exported as static images, html files, but they can also be embedded in **rmarkdown** documents and **shiny** apps.
+
+									R packages: tmap, sf, sp, raster, rmarkdown, shiny
+
+									Tennekes, M. (2018) tmap: Thematic Maps in R. Forthcoming in the Journal of Statistical Software (JSS).</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Deep Learning with Keras for R
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Aimee Gott</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>If you don’t work at one of the big tech giants, then deep learning may seem out of reach. Fortunately, in recent years the barrier to entry has dropped dramatically. Libraries, such as TensorFlow, have made it much easier to implement the low level linear algebra. While Keras builds on this to provide a high level Python API specifically for building neural networks. A single data scientist can now quickly build a deep network, layer by layer, without losing time on implementation details. You don’t need terabytes of data and GPU clusters to get started; even relatively small problems can now benefit from deep learning.
+
+									A key aim of Keras is to reduce the time from idea to implementation. Many data scientists choose to use the R language for its first class statistics functionality, powerful data manipulation, and vibrant community. While Python is also a fantastic choice for data science, learning it is a significant investment when what you really want to be doing is trying out your idea. For this reason RStudio created the R Interface to Keras. This allows an R user to quickly experiment with neural networks to see if they are right for their problem.
+
+									In this workshop we will get you up and running with Keras for R. We will cover some theoretical background but the focus is on implementation. We will demonstrate how to setup different types of neural network to solve simple problems with time series, and give you the opportunity to build your own with guided exercises.
+
+									A cloud based RStudio Server environment will be provided so attendees only require a laptop with internet access and a modern browser. Basic R knowledge is required, and it will help if attendees are familiar with packages such as dplyr for data manipulation.</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Building a package that lasts
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Colin Fay</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>**Description of proposed workshop**
+
+									You’ve got the killer idea for an R package, but you’re not sure where to start? Then you’ve come to the right place!
+
+									During this workshop, we’ll go through the whole process of building a package that lasts. In other words, we’ll review the best practices to create a package that works (obviously), but more importantly a package that is extensively tested to prevent bugs, that will be easier to maintain on the long run, and that will be fully documented. 
+
+									At the end of this workshop, the attendees will have a road map for writing robust packages, designed for industrial use and/or for CRAN. 
+
+									**Plan of the workshop**
+
+									+ Package basics : understand and organise your package structure 
+									+ Best practices for writing functions in packages (optimised for speed and for maintenance) 
+									+ Using tests : why you should write tests for your package, and how to do it.
+									+ Documentation : Using roxygen to document your functions, create a vignette to explain what your package does, and enhance your documentation with pkgdown.
+									+ Continuous integration and code coverage with GitHub, Travis and Codecov
+
+									**Required packages**
+
+									+ devtools 
+									+ usethis 
+									+ attempt 
+									+ testthat
+
+									**Required skills of participants**
+
+									+ Basic knowledge of R
+									+ Functions 
+									+ Basic Markdown  
+
+									**Required work to do before workshop**
+
+									+ Install a recent version of R and RStudio on your laptop
+									+ Participants can come with a series of functions they want to put in a package, or use the examples that will be provided by the speaker during the workshop.</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Building a pipeline for reproducible data screening and quality control
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Claus Ekstrøm</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>One of the biggest challenges for a data analyst is to ensure the reliability of the data since the validity of the conclusions from the analysis hinges on the quality of the input data. This tutorial will cover the workflow of data screening and -validation that transforms raw data into data that can be used for statistical analysis. In particular, we will discuss organizing research projects,
+									tidy data formats, internal and external validity of data, requirements for reproducible research, the `dataMaid` R package for
+									customized data screening, the `assertr` and `assertive` R packages for data validation and data validation rule sets, and how to produce code books that summarize the final result of the data screening process and provide a starting point for the subsequent statistical analyses.</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Building an Interpretable NLP model to classify tweets
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Grace Meyer</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>Unstructured text data is rapidly increasing in volume and variety and with advances in Machine Learning it’s becoming available to be tapped for insights and patterns. One of the use-cases of predictive modelling in text analytics would be to classify an author based on text alone. However, even the most accurate model may be difficult to interpret and therefore understand how reliable it is or whether it produces insights that can be generalized. One of the solutions here is to apply the Local Interpretable Model-agnostic Explanations (LIME) framework to the classifiers to generate interpretable explanations. 
+
+									In this workshop, we will take you step-by-step through tidytext principles and text-analytics pipeline to create a predictive model classifying tweets by Clinton or Trump. We will go over the data collection, exploration, feature engineering and model building. Finally, we will apply the LIME framework to better understand and interpret what drives model predictions.
+
+									R packages: readr, dplyr, tm, tidytext, text2vec , caret, xgboost, lime
+
+									Data used: Clinton-Trump-tweets (https://www.kaggle.com/benhamner/clinton-trump-tweets)</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Clean R code - how to write it and what will the benefits be
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Ildiko Czeller</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p># Clean R code - how to write it and what will the benefits be 
+
+									### Goals
+
+									By the end of the tutorial participants should be able to:
+
+									- recognize code improvement possibilities,
+									- refactor analysis code by extracting some parts into functions,
+									- reason whether a piece of code could be regarded as clean,
+									- understand the benefits of applying clean code principles.
+
+									### Detailed Outline
+
+									During the tutorial the participants will perform a guided data analysis task and make several refactoring steps as we progress. They will immediately experience the benefit of applying the shown techniques. The tutorial will cover launguage-agnostic and R-specific topics as well.
+
+									Some of the language-agnostic topics covered:
+
+									- extract code into functions
+									- organize code into files and folders
+									- organize functions within an R file
+									- how to choose variable and function names
+									- single responsibility principle
+									- what is a pure function
+
+									Some R-specific topics covered:
+
+									- how to extract some ggplot2 layers into functions
+									- how to create functions operating on different columns of a data frame
+									- parametrized rmarkdown documents
+									- useful RStudio keyboard shortcuts  
+
+									### Pre-requisites
+
+									Participants should be able to create simple R functions and use R for data analysis. We believe the tutorial is useful for beginners as well as for more experienced R programmers.
+
+									### Justification
+
+									Most R users do not have a formal background in software engineering, however, coding is a significant part of their job. We believe every R user can benefit from writing cleaner and simpler code which also makes it more reusable and less error-prone. Writing clean code also helps with reproducibility. Refactoring early and often makes the life of your future self and your collaborators as well as others wishing to understand your code easier.</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    The beauty of data manipulation with data.table
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>János Divényi</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>## Goals
+
+									The data.table package is a powerful tool for manipulating data, especially if the underlying data set gets large (~ above 1 GB). In spite of its clear advantages the package is underused. Many R users are afraid of it because of its "ugly" syntax. This workshop aims to dismantle this belief by showing the beauty in the package logic, and illustrating its strengths in performance.
+
+									By the end of the tutorial participants should be able to:
+
+									- use data.table for common data manipulation tasks (data input/output, aggregation, reshaping, joins)
+									- build on their understanding of data.table syntax to solve more complicated tasks
+									- compare the performance of the package to other widely used alternatives
+
+
+									## Method
+
+									The workshop would start with a short introduction into the logic and syntax of the data.table package. The participants would discover the power and beauty of the package through guided data manipulation tasks borrowed mainly from Emarsys use cases.
+
+
+									## Pre-requisites
+
+									Participants should be able to solve data manipulation tasks in R (using base R or the hadleyverse/tidyverse). No knowledge of the data.table package is required.</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    DALEX: Descriptive mAchine Learning EXplanations . Tools for exploration, validation and explanation of complex machine learning models
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Przemyslaw Biecek</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>Complex machine learning models are frequently used in predictive modelling. There are a lot of examples for random forest like or boosting like models in medicine, finance, agriculture etc.
+									In this workshop we will show why and how one would analyse the structure of the black-box model.
+
+									This will be a hands-on workshop with four parts. In each part there will be a short lecture (around 20 minutes) and then time for practice and discussion (around 20 min).
+
+									* Introduction
+
+									Here we will show what problems may arise from blind application of black-box models. Also we will show situations in which the understanding of a model structure leads to model improvements, model stability and larger trust in the model.
+
+									During the hands-on part we will fit few complex models (like xgboost, randomForest) with the mlr package and discuss basic diagnostic tools for these models.
+
+									* Conditional Explainers
+
+									In this part we will introduce techniques for understanding of marginal/conditional response of a model given a one- two- variables.
+									We will cover PDP (Partial Dependence Plots) and ICE (Individual Conditional Expectations) packages for continuous variables and MPP (Merging Path Plot from factorMerger package) for categorical variables.
+
+									* Local Explainers
+
+									In this part we will introduce techniques that explain key factors that drive single model predictions. This covers Break Down plots for linear models (lm / glm) and tree-based models (randomForestExplainer, xgboostExplainer) along with model agnostic approaches implemented in the live package (an extension of the LIME method).
+
+									* Global Explainers
+
+									In this part we will introduce tools for global analysis of the black-box model, like variable importance plots, interaction importance plots and tools for model diagnostic.
+
+									* Packages
+
+									mlr (Bernd Bischl and others)
+									live (Staniak Mateusz, and Przemysław Biecek)
+									FactorMerger(Sitko Agnieszka, and Przemyslaw Biecek)
+									pdp (Greenwell, Brandon)
+									ALEPlot (Apley, Dan)</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Efficient R programming
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Colin Gillespie</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>## Detailed Outline
+
+									This tutorial will cover a variety of techniques that will increase the productivity of anyone using R. Topics include optimizing your set-up, tips for increasing code performance and ways to avoid memory issues. Ranging from guidance on the use of RStudio to ensure an efficient workflow to leveraging C++, this tutorial provides practical advice suitable for people from a wide range backgrounds.
+
+									An overview of the topics covered are:
+
+									  * Efficient set-up: the `.Rprofile` and `.Renviron` files, the importance of a good IDE, and switching BLAS libraries.
+									  * Efficient hardware: assessing your computer hardware with the [benchmarkme](https://github.com/csgillespie/benchmarkme) package.
+									  * Efficient collaboration: coding guidelines and the importance of version control.
+									  * Efficient programming: common R data types, good programming techniques, parallel computing and the byte compiler.
+									  * Efficient learning: practical suggestions for improving your general R knowledge. 
+									  * Efficient C++ programming: A brief introduction to Rcpp.
+
+									## Pre-requisites
+
+									Participants should be familiar with for loops, if statements and writing simple functions.
+
+									## Justification
+
+									R is now used in many disparate settings. However, the majority of R programmers have no formal computer training, 
+									and instead have "learned on the job". This tutorial aims to fill in some of these gaps.
+
+									# Potential attendees
+
+									This tutorial will be of interest to most conference attendees and so I would expect it to be reasonably popular. I gave a similar tutorial at useR!2017 and it was the most popular tutorial by around 100 participants.</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Graphs: A datastructure to query
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Benjamin Ortiz Ulloa</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>When people think of graphs, they often think about mapping out social media connections. While graphs are indeed useful for mapping out social networks, they offer so much more. Graphs provide a datastructure that scales very well and can be queried in intuitive ways. Data structures in the real world resemble vertices and edges more than they resemble rows and columns. **Gremlin** and **Cypher** are query languages that take advanatage of the natural structure of graph databases. In this tutorial I will show how we can use **igraph** in a similar manner as these graph query languages to get new insites into our data.
+
+									The workshop will be divided in 4 parts:
+
+									1. A survey of graphs and how they are used (45 min)
+									  + Social Network Analyses
+									  + Natural Language Processing
+									  + NoSQL
+									  + Epidemiology
+									2. An introduction of **igraph** (70 min)
+									  + Graph structures
+									  + **igraph** syntax
+									  + Graph IO
+									  + Summary Statistics
+									  + Base Plotting
+									  + **ggraph**
+									3. Case Study: NLP (45 min)
+									  + Filter logic
+									  + Traversal logic
+									  + **tidytext**
+									  + **magritr**
+									4. Graph Ecosystem (30 min)
+									  + Gephi
+									  + D3
+									  + TinkerPop
+									  
+									R packages: **igraph**, **magrittr**, **tidyr**, **ggplot2**, **ggraph**
+
+									References:
+
+									- Practical Gremlin: https://github.com/krlawrence/graph
+									- R igraph manual pages: http://igraph.org/r/doc/
+									- Text Mining in R: https://www.tidytextmining.com/
+									- ggraph: https://github.com/thomasp85/ggraph
+									- Exploring Graphs: https://beemyfriend.github.io/graphs.html</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Geocomputation with R
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Jannes Muenchow</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p># Geocomputation with R
+									Geographic data is special and has become ubiquitous.
+									Hence, we need computational power, software and related tools to handle and extract the most interesting patterns of this ever-increasing amount of (geo-)data. 
+									This workshop gives an introduction how to do so using R.
+									It will introduce the audience how the two most important spatial data models - vector and raster - are implemented in R. 
+									The workshop will also give an introduction to spatial data visualization. 
+									Maps are a compelling way to display complex data in a beautiful way while allowing first inferences about spatial relationships and patterns.
+									Additionally, we will bridge R with Geographic Information Systems (GIS), i.e., we show how to combine the best of two worlds: the geoprocessing power of a GIS and the (geo-)statistical data science power of R.
+									We will do so with a use case presenting spatial and predictive modeling.
+
+									# Learning objectives
+									By the end of this workshop, the participants should:
+
+									* know how to handle the two spatial data models (vector and raster) in R.
+									* import/export different geographic data formats.
+									* know the importance of coordinate reference systems.
+									* be able to visualize geographic data in a compelling fashion.
+									* know about geospatial software interfaces and how they are integrated with R (GEOS, GDAL, QGIS, GRASS, SAGA).
+									* know about the specific challenges when modeling geographic data.
+
+									# Tutorial content
+
+									* The R spatial ecosystem
+									* Vector data model: simple features (**sf**)
+									* Raster data model (**raster**)
+									* Geographic data visualization (**ggplot2**, **mapview**, **tmap**)
+									* Bridges to GIS (**RQGIS**, **RSAGA**, **rgrass7**)
+									* Spatial modeling case study</p>
+									  </td>
+									</tr>
+									<tr class="talk">
+									  <td>
+									    Automatic and Interpretable Machine Learning in R with H2O and LIME
+									    <a class="slides" href="todo_url" target="_blank">
+									      <i class="icon-download-alt"></i>
+									    </a>
+									  </td>
+									  <td>Jo-fai Chow</td>
+									</tr>
+									<tr class="abstract">
+									  <td colspan="2">
+									    <p>General Data Protection Regulation (GDPR) is just around the corner. The regulation will become enforceable a week after the eRum conference (from 25 May 2018). Are you and your organization ready to explain your models?
+
+									This is a hands-on tutorial for R beginners. I will demonstrate the use of two R packages, h2o &amp; LIME, for automatic and interpretable machine learning. Participants will be able to follow and build regression and classification models quickly with H2O's AutoML. They will then be able to explain the model outcomes with a framework called Local Interpretable Model-Agnostic Explanations (LIME). 
+
+									(If workshop is not available, I can turn this into a talk.)
+
+									References:
+									- Hall et al (2017): Ideas on interpreting machine learning. https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning
+									- Ribeiro et al (2016): Introduction to Local Interpretable Model-Agnostic Explanations (LIME). https://www.oreilly.com/learning/introduction-to-local-interpretable-model-agnostic-explanations-lime
+									- Ribeiro et al (2016): "Why Should I Trust You?": Explaining the Predictions of Any Classifier. https://arxiv.org/abs/1602.04938
+									- Wikipedia (2018): General Data Protection Regulation. https://en.wikipedia.org/wiki/General_Data_Protection_Regulation</p>
+									  </td>
+									</tr>
+                                </tbody>
+                            </table>
+
+                            <p>Please note that no computers will be provided at the workshops, so we recommend bringing your own computer.</p>
+
+                        </section>
 
                         <section id="schedule">
                             <div class="page-header">
