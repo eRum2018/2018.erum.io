@@ -321,3 +321,8 @@ section {
     text-align: center;
     margin-top: -10px;
 }
+
+.center-table th, td {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
