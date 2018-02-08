@@ -37,6 +37,10 @@
     margin-right: auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .sidebar {
     float:right;
 }
@@ -320,4 +324,14 @@ section {
     font-size: 0.8em;
     text-align: center;
     margin-top: -10px;
+}
+
+.center-table th, td {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.left-table th, td {
+    text-align: left !important;
+    vertical-align: middle !important;
 }
