@@ -335,3 +335,7 @@ section {
     text-align: left !important;
     vertical-align: middle !important;
 }
+
+.flag-icon {
+    -webkit-transform: translateY(-5%);
+}
