@@ -300,6 +300,10 @@ section {
     color: black;
     text-decoration: none;
 }
+.formdisabled {
+    background-color: #dedede;
+    color: black;
+}
 
 .nobold {
     font-weight: 100;
