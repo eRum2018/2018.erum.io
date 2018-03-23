@@ -24,6 +24,7 @@
 #twnews ol.carousel-indicators {
     margin-top: -25px;
     width: 50%;
+    right: 80px;
 }
 #twnews ol.carousel-indicators li {
     background-color: #ddd;
