@@ -344,3 +344,10 @@ section {
     text-align: left !important;
     vertical-align: middle !important;
 }
+
+.thumbnail-title {
+    text-align: center;
+    color: white;
+    background-color: gray;
+    margin: -15px -5px -20px -5px;
+}
