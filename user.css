@@ -355,3 +355,7 @@ section {
     margin-top: -15px;
     padding-bottom: 10px;
 }
+
+.modal-body {
+    height: 400px;
+}
