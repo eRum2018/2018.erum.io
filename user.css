@@ -359,3 +359,21 @@ section {
 .modal-body {
     height: 400px;
 }
+
+.table tbody td.schedule-keynote {
+    background-color: rgba(220, 220, 220, 1);
+}
+.table tbody td.schedule-invited {
+    background-color: rgba(240, 240, 240, 1);
+}
+td.blank {
+    background-color: white !important;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #3f87cc33;
+}
+.table-hover tbody td:hover {
+    background-color: #3f87cc !important;
+    color: white;
+}
