@@ -377,3 +377,20 @@ td.blank {
     background-color: #3f87cc !important;
     color: white;
 }
+table.schedule td:nth-child(2), table.schedule td:nth-child(3) {
+    width: 50%;
+}
+table.schedule td ul {
+    text-align:left;
+    list-style-type:square;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 0px;
+}
+.table-hover tbody tr:hover td ul {
+    white-space: normal !important;
+    width: 100%;
+}
+table.schedule td {
+    overflow: hidden;
+}
