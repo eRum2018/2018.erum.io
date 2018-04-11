@@ -394,3 +394,13 @@ table.schedule td ul {
 table.schedule td {
     overflow: hidden;
 }
+
+
+.nav>li>ul>li>a:hover {
+    text-decoration: none;
+}
+.nav a.submenu {
+    display:inline-block;
+    padding-left:25px;
+    padding-right:25px;
+}
