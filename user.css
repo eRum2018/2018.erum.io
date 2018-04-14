@@ -377,6 +377,11 @@ td.blank {
     background-color: #3f87cc !important;
     color: white;
 }
+.table-hover td:hover a, .table-hover tr:hover a {
+    color: white;
+    font-weight: strong;
+    text-decoration: underline;
+}
 table.schedule td:nth-child(2), table.schedule td:nth-child(3) {
     width: 50%;
 }
