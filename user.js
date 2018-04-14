@@ -33,6 +33,22 @@ $(document).ready(function() {
     $('.abstract').click(function() {
 	      $(this).toggle();
     });
+    // auto toggle abstract on direct links
+    $(window).on( 'hashchange', function(e) {
+	      e.preventDefault();
+        var hash = location.hash;
+        console.log('hash changed to ' + hash);
+        if (hash.startsWith("#talk-2-")) {
+            console.log('opening talk abstract for ' + hash);
+            $(hash).next().toggle();
+        }
+    });
+    $('.point-to-abstract').click(function(event) {
+        event.preventDefault();
+        console.log($(this).attr('id'));
+        window.location.hash = $(this).attr('id').replace('schedule', 'talk');
+        return false;
+    });
 
     $(".sidebar").on("activate", function(){
 	      $(".usermenu li a i").removeClass("icon-white");
