@@ -408,3 +408,6 @@ table.schedule td {
 .point-to-abstract {
     cursor: pointer;
 }
+.point-to-schedule {
+    cursor: pointer;
+}

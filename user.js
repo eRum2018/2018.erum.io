@@ -34,19 +34,25 @@ $(document).ready(function() {
 	      $(this).toggle();
     });
     // auto toggle abstract on direct links
-    $(window).on( 'hashchange', function(e) {
+    $(window).on('hashchange', function(e) {
 	      e.preventDefault();
         var hash = location.hash;
         console.log('hash changed to ' + hash);
         if (hash.startsWith("#talk-2-")) {
             console.log('opening talk abstract for ' + hash);
-            $(hash).next().toggle();
+            $(hash).next().show();
         }
     });
     $('.point-to-abstract').click(function(event) {
         event.preventDefault();
         console.log($(this).attr('id'));
         window.location.hash = $(this).attr('id').replace('schedule', 'talk');
+        return false;
+    });
+    $('.point-to-schedule').click(function(event) {
+        event.preventDefault();
+        console.log($(this).parent().attr('id'));
+        window.location.hash = $(this).parent().attr('id').replace('talk', 'schedule');
         return false;
     });
 
