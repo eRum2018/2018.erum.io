@@ -28,7 +28,9 @@ $(document).ready(function() {
 
     // toggle show/hide abstract for a talk
     $('.talk').click(function() {
-	      $(this).next().toggle();
+        if (!$(this).next().html().includes('<code>NA_character_</code>')) {
+	          $(this).next().toggle();
+        }
     });
     $('.abstract').click(function() {
 	      $(this).toggle();
@@ -39,19 +41,24 @@ $(document).ready(function() {
         var hash = location.hash;
         console.log('hash changed to ' + hash);
         if (hash.startsWith("#talk-2-")) {
-            console.log('opening talk abstract for ' + hash);
-            $(hash).next().show();
+            console.log($(hash).next().html());
+            if (!$(hash).next().html().includes('<code>NA_character_</code>')) {
+                console.log('opening talk abstract for ' + hash);
+                $(hash).next().show();
+            }
         }
     });
     $('.point-to-abstract').click(function(event) {
         event.preventDefault();
         console.log($(this).attr('id'));
+        window.location.hash = '';
         window.location.hash = $(this).attr('id').replace('schedule', 'talk');
         return false;
     });
     $('.point-to-schedule').click(function(event) {
         event.preventDefault();
         console.log($(this).parent().attr('id'));
+        window.location.hash = '';
         window.location.hash = $(this).parent().attr('id').replace('talk', 'schedule');
         return false;
     });
