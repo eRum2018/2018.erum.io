@@ -1804,13 +1804,13 @@
                                         <td rowspan="7" colspan="4">
                                             <div class="text-center">
                                                 <ul style="white-space: normal !important;width: 100%;">
-                                                    <li>Kamil Wais: Towards Native Declarative Data Collection with Question and Survey Instant Feedback in R & Shiny</li>
-                                                    <li>Max Grütter: The Zurich RealEstateApp - An R-Shiny application for the Zurich real estate market</li>
-                                                    <li>Bartosz Czernecki: What is the best place to be? Location optimization with R and Google Maps</li>
-                                                    <li>Francesca Vitalini: SmaRP: Smart Retirement Planning A Shiny App to evaluate retirement benefits and optimization thereof, in the context of the Swiss system.</li>
-                                                    <li>Dávid Gyurkó: Going async with Shiny</li>
-                                                    <li>Agnieszka Borsuk-De Moor: Informed clinical decisions based on population pharmacometric models with the aid of Shiny</li>
-                                                    <li>András Tajti: Shiny Dashboard on streaming data</li>
+                                                    <li><a class="point-to-abstract" id="schedule-2-70">Kamil Wais: Towards Native Declarative Data Collection with Question and Survey Instant Feedback in R & Shiny</a></li>
+                                                    <li><a class="point-to-abstract" id="schedule-2-79">Max Grütter: The Zurich RealEstateApp - An R-Shiny application for the Zurich real estate market</a></li>
+                                                    <li><a class="point-to-abstract" id="schedule-2-89">Bartosz Czernecki: What is the best place to be? Location optimization with R and Google Maps</a></li>
+                                                    <li><a class="point-to-abstract" id="schedule-2-105">Francesca Vitalini: SmaRP: Smart Retirement Planning A Shiny App to evaluate retirement benefits and optimization thereof, in the context of the Swiss system.</a></li>
+                                                    <li><a class="point-to-abstract" id="schedule-2-126">Dávid Gyurkó: Going async with Shiny</a></li>
+                                                    <li><a class="point-to-abstract" id="schedule-2-130">Agnieszka Borsuk-De Moor: Informed clinical decisions based on population pharmacometric models with the aid of Shiny</a></li>
+                                                    <li><a class="point-to-abstract" id="schedule-2-144">András Tajti: Shiny Dashboard on streaming data</a></li>
                                                 </ul>
                                             </div>
                                         </td>
@@ -3948,7 +3948,7 @@
                             </table>
 
 
-                            <h4 style="margin-top: 10px;">Lighning talks</h4>
+                            <h4 style="margin-top: 10px;">Lightning talks</h4>
 
                             <table class="table table-hover left-table">
                                 <thead>
@@ -3977,7 +3977,111 @@
                                 </thead>
                                 <tbody>
 
-                                    TODO
+                                     <tr class="talk" id="talk-2-130">
+                                        <td>
+                                            Informed clinical decisions based on population pharmacometric models with the aid of Shiny
+                                        </td>
+                                        <td>Agnieszka Borsuk-De Moor</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Population pharmacokinetic/pharmacodynamic (PK/PD) models capture the variability of the target population of patients and enable the search for potential covariance influence on drug's PK/PD parameters in individuals. This knowledge could help to adjust drug dosing in clinical practice. However, the complexity of the models, their underlying hiercharchy and the variety of softwares used for analysis make population models incomprehensible for clinicians, while they could be valuable for individualizing therapy and increasing its safety. Doctors need an easy tool which will be able to answer typical questions emerging in clinical setting. Shiny package offers a readily-available solution to this issue that does not require any programming skills nor pharmacometric expertise. In this talk the use of Shiny application representing pharmacometric model will be discussed in practice.</p>
+                                            <p>R packages: shiny, ggplot2</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="talk" id="talk-2-144">
+                                        <td>
+                                            Shiny Dashboard on streaming data
+                                        </td>
+                                        <td>András Tajti</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Following reactions to certain events never been as easy as today: just go toTwitter, and collect everything with the tag of your interest. But pure tweets can be cumbersome to understand for a single viewer, especially in real time. For this problem, one can create a dashboard wit the number of tweets, most popular tags, reaction count, anything which can be computed fast enough to get on the board 'in real time'. Although by default, Shiny does not have a <code>digestStream</code> reactive function, there are multiple ways to get around this problem. and I will show some of them.</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="talk" id="talk-2-89">
+                                        <td>
+                                            What is the best place to be? Location optimization with R and Google Maps
+                                        </td>
+                                        <td>Bartosz Czernecki<br>
+                                        Jakub Nowosad
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Have you ever tried to find a hotel that is close to the conference venue but then you realized that close in terms of a distance doesn’t always mean the same in terms of time? Or have you searched the house market for a place that is the closest to both yours and your partner's workplaces? Simple distance measures could not be the best in these cases. For example, you are unable to cross a river in every point - you need to find the closest bridge. Additionally, transportation availability varies for different places and largely depends on a preferred mode of transportation (e.g. foot, cycle, motor vehicle, public transport). Private motor vehicle could be the most efficient in the suburbs, but not the most suitable in a city center. Distance Matrix API of Google Maps accessed through the googleway and spatial packages can be useful to answer the above questions. It allows for computation of distances and times between points, but also can be modified to create isochrone maps. They present areas of the similar “distance” minutes spend traveling (or kilometers along roads) from the point of interested. In this talk, we will show a case study of finding the most optimal place to stay for the eRum conference by the means of interactive visualization features of spatial R for location optimization.</p>
+                                            <p>R packages: googleway, leaflet, sp, sf, raster, rgdal</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="talk" id="talk-2-126">
+                                        <td>
+                                            Going async with Shiny
+                                        </td>
+                                        <td>Dávid Gyurkó</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>This talk introduces useR-s to asynchronous (async) programming in Shiny using the <code>future</code> and <code>promises</code> packages. The talk will include the answers to the questions: what is async? why bother with it? and how can I go async with Shiny?</p>
+                                            <p>R packages: future, promises</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="talk" id="talk-2-105">
+                                        <td>
+                                            SmaRP: Smart Retirement Planning A Shiny App to evaluate retirement benefits and optimization thereof, in the context of the Swiss system.
+                                        </td>
+                                        <td>Francesca Vitalini</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>The Swiss social security system, one of the most robust, is based on a three-pillar regime. The first Pillar, common to most developed countries, is a state-run pay-as-you-earn system with minimum benefits. The voluntary contribution (Pillar III) is a privately-run, tax-deductible insurance fund. At the heart of the Swiss system is the so-called Pillar II, a compulsory, tax-deductible company occupational pension insurance fund. Voluntary Pillar II buy-ins are regulated but allow for benefits improvement while reducing the tax burden during the working career. The complexity is further increased by a municipality-dependent taxation. Altogether this calls for an early-stage conscious approach towards retirement planning. However, it is not straight-forward to assess effects of early retirement, moving to a different canton or applying a different voluntary pension schema.</p>
+                                            <p>SmaRP, Smart Retirement Planning, supports the users in an educated decision-making. Using R and Shiny, we developed a parameterisable pension calculator web application, which provides real-time computation of the total retirement funds over time, explicitly accounting for the various contributing blocks. It features a flexible yet intuitive user interface with several options for detailed personalisation. An interactive visualisation is implemented using googleVis and the underlying data is made available for download. The user is additionally presented with a custom report generated with rmarkdown/knitr. Unlike other pension calculators, the details of the model approach and underlying assumptions are disclosed to make results transparent and reproducible. The modular structure of the Shiny application allows for seamless extension and supports modular execution, making the application fully adaptive.</p>
+                                            <p>In this talk we will give a deep-dive into the framework by showcasing illustrative ex- amples and scenarios everyone can relate to.</p>
+                                            <p>R packages: Shiny, rmarkdown, knitr, dplyr, googleVis</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="talk" id="talk-2-70">
+                                        <td>
+                                            Towards Native Declarative Data Collection with Question and Survey Instant Feedback in R&Shiny
+                                        </td>
+                                        <td>Kamil Wais</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>R is great for data analysis and Shiny is great for interactive data visualisation, but could we use R&amp;Shiny for efficient declarative data collection? Moreover, how can we develop web data products in R&amp;Shiny, that are based on real-time declarative data collection with after-question and after-survey instant feedback?</p>
+                                            <p>Users of such web data products should be able to immediately access the feedback relevant to their answers. To increase the value of the feedback, it should be dynamically customised to each respondent. This can be achieved by pre-programmed templates of feedback scenarios, which can be adaptively customised by the respondent’s answers to this or previous questions. Employing large analytical and data visualisation capabilities in R, we could try to adapt any type of instant feedback to each user. Using R, we could also combine different feedback sources: a respondent’s answers to a given question and to other questions, other users’ answers, external open data (imported into our app or available via APIs), and aggregated or summarised outcomes from reference studies.</p>
+                                            <p>What are the possibilities and obstacles for developing such data products natively in R&amp;Shiny? How the idea of QAF (Question, Answer, and Feedback) objects can be implemented in R&amp;Shiny? What is the roadmap for developing ODGAR framework for On-line Data Gathering, Analysing, and Reporting? Is it possible to build mobile app in R&amp;Shiny? I will try to answer these questions using experience gained from developing early stage prototypes.</p>
+                                            <p>R packages: shiny, ODGAR (in development), and somehow related packages: shinyjs, shinydashboard, shinywidgets, shinysense, shinymaterial, shinygui, shinyBS, shinyFeedback, limeRick.</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="talk" id="talk-2-79">
+                                        <td>
+                                            The Zurich RealEstateApp - An R-Shiny application for the Zurich real estate market
+                                        </td>
+                                        <td>Max Grütter</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>The Statistical Office of the Canton of Zurich is developing an internal-<strong>R Shiny app</strong> for improving the speed and quality of real estate market queries.</p>
+                                            <p>Since 1974, the Statistical Office has privileged access to detailed information on the Zurich real estate market in form of administrative data. Despite a wide range of statistics, simple inquiry tools and in-depth analyses, the Statistical Office is receiving more and more complex queries on the real estate market. Many of these requests are similar and can be met using standard processes. Nevertheless, they cause a (too) high personnel expenditure in production, quality assurance and communication.</p>
+                                            <p>To solve this problem, the office is currently developing an R-Shiny application, which allows to create complex analyses from different areas of the real estate market without any specific programming knowledge. Spatial, temporal and content criteria can be individually selected using various selection tools. In a real-time calculation, the <strong>Zurich RealEstateApp</strong> produces the results and displays them in tabular and graphical form. A download function for the tables and graphics is also provided (Excel, csv, pdf). The application ensures that the results are methodically and content wise clean and harmless in terms of data protection law, making it easy and reliable for customers to access valuable facts for their decision-making process.</p>
+                                            <p>The described project will be presented at the erum2018 conference in the form of a presentation. In addition to the most important steps during the development and the central selection tools of the app, application examples and initial findings from the test phase with beta users will be presented. It is planned that interested parties will be able to test the app themselves during the conference.</p>
+                                            <p>R packages: tidyverse, shiny, leaflet</p>
+                                        </td>
+                                    </tr>
 
                                 </tbody>
                             </table>
