@@ -2814,6 +2814,645 @@
                                         </td>
                                     </tr>
 
+                                </tbody>
+                            </table>
+
+                            <h4 style="margin-top: 10px;">Regular talks</h4>
+
+                            <table class="table table-hover left-table">
+                                <thead>
+                                    <tr>
+                                        <th width="75%">Title</th>
+                                        <th>Speaker(s)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr class="talk" id="talk-2-82">
+                                        <td>
+                                            Using R to Build a Data Science Team
+                                        </td>
+                                        <td>Aimee Gott</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>The rise of data science has brought with it a high demand for data scientists. More companies than ever before are looking for the broad skillset of THE data scientist –or the ever out of reach unicorn-- but in reality, most data scientists are moving to the field from diverse backgrounds such as statistics, physics, chemistry, engineering and computer science. So, how does a company ensure their data science team has the right mix of skills to achieve their business goals? Ensuring the statistician has the software engineering skills they need and the computer scientist can understand advanced analytics are just the tip of the iceberg.</p>
+
+                                            <p>At Mango, we have been working with a number of companies, across different industries, to help them build their in-house data science capability - from completely new teams to teams already in place, looking to understand how to do data science in practice.</p>
+
+                                            <p>So how do we build on the skills teams with diverse backgrounds already have? How can we use the capability of R to grow strong data science teams? In this talk we will discuss some of the approaches that we have taken at Mango to educate teams in everything from software development best practices to the intricacies of machine learning – all without leaving R!</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-147">
+                                        <td>
+                                            What software engineers can teach to data scientists: code safety and … with automatic tests
+                                        </td>
+                                        <td>Andrea Melloncelli</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>The development through the tests is a well-established methodology in the field of software engineering for several reasons:</p>
+
+                                            <p>First of all, it validates the real functionality of what we are developing, and avoid regressions in the code functionality: in fact, the automatic tests are run frequently and every time that a new portion of code is added, they check that everything is still working as expected (and eventually point out where it's not going so) Secondly, tested code enables refactoring: it means that using tests you can modify the working code to improve its readability or abstraction without adding further functionality. This provides the re-usability of that code. Furthermore tests describe the code: clearly written tests in fact provide a working documentation of the low-level functionalities of the code being written Finally, Test Driven Development is a programming methodology that starts with the tests to describe the design of the code before it validates its functionality.</p>
+
+                                            <p>However, this methodology has not yet established itself in the world of data science, even if RStudio and several others have already created tools for supporting the package development with automatic tests. Since validating code and making refactoring are very important qualities in data science, I would like to show within this talk how to use tests in the development of a data science project and what are the great advantages that it can lead, in term of clarity of the code, robustness and safeness of code changings.</p>
+
+                                            <p>Outline:</p>
+
+                                            <ol style="list-style-type: decimal">
+
+                                                <li>Why do tests</li>
+
+                                                <li>The Testthat package (https://github.com/r-lib/testthat)</li>
+
+                                                <li>Test Driven Development (https://en.wikipedia.org/wiki/Test-driven_development)</li>
+
+                                                <li>The importance of refactoring</li>
+
+                                                <li>Tests as working documentation</li>
+
+                                                <li>Shiny tests</li>
+
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-104">
+                                        <td>
+                                            Time series modeling of plant protection products in aquatic systems in R
+                                        </td>
+                                        <td>Andreas Scharmüller<br>
+                                            Mira Kattwinkel<br> Ralf B. Schäfer
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Plant protection products (PPP) including fungicides, herbicides and insecticides are amongst other factors an important stressor in aquatic ecosystems. We analyzed their seasonal occurrence patterns and possible related adverse effects on aquatic organisms in small running waters. Therefore more than 450.000 water chemistry samples had been collected by German federal agencies between 2005 and 2015. The data were processed in R, mostly by using the data.table-package, before they were uploaded into a relational PostgreSQL data base. For subsequent analysis of seasonal occurrence patterns of PPP in streams we used Generalized Additive Models (GAM) from the mgcv package.</p>
+
+                                            <p>We hypothesized (i) to find increased in-stream occurrences of PPP during months of increased application. Likewise we hypothesized (ii) adverse effects on aquatic organisms to peak during, or shortly after periods of application. Furthermore we hypothesized (iii) to find a long-term decrease in occurrences of compounds, whose authorization has expired during or shortly before the monitoring period.</p>
+
+                                            <p>We defined the occurrence of PPP as the number of detections per compound per month and sampling site. In order to quantify adverse effects of single PPP on different aquatic organism groups Toxic Unit (TU) metrics were used. They are calculated by dividing in-stream compound concentrations by endpoints of experimental toxicity tests. Such test data were obtained through large publicly accessible data bases. Additional data on chemicals were collected using the webchem package and data on organisms were accessed through the taxize package.</p>
+
+                                            <p>We were able to trace seasonal patterns of PPP in small streams and draw conclusions on the effect on aquatic communities therein. With the help of the mentioned R packages and data base systems we were able to establish fast and reproducible procedures for the analysis of large environmental data sets.</p>
+
+                                            <p>R packages: data.table, taxize, webchem, mgcv, ggplot2</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-61">
+                                        <td>
+                                            Taking the Bayesian Leap
+                                        </td>
+                                        <td>Andrew Collier</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>What are the minimum things you need to know to start applying Bayesian techniques in R? This talk will provide an entry level discussion covering the following topics:</p>
+
+                                            <ul>
+
+                                                <li>What can Bayes do for me? (A brief introduction to Bayesian methods)</li>
+
+                                                <li>What is Stan? (Writing models in Stan)</li>
+
+                                                <li>Using Stan in R. (Using the rstan package)</li>
+
+                                            </ul>
+
+                                            <p>The talk will be peppered with useful tips for dealing with the initial challenges of using Stan.</p>
+
+                                            <p>R packages: rstan</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-135">
+                                        <td>
+                                            Tools for using TensorFlow with R
+                                        </td>
+                                        <td>Andrie de Vries</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>In this session I demonstrate how to use R to train and deploy deep learning models with TensorFlow and Keras. You can easily construct scalable data pipelines, train models, evaluate training runs, and deploy your models to a variety of platforms. Until recently these tools were Python centric, but using new R packages (provided by RStudio and available from CRAN), any R programmer can now easily use TensorFlow.</p>
+
+                                            <p>Key takeaways:</p>
+
+                                            <ol style="list-style-type: decimal">
+
+                                                <li><p>Use R to create rich machine learning models with TensorFlow. Several new R packages enable you to train models, including <a href="https://tensorflow.rstudio.com/tensorflow/">tensorflow</a>, <a href="https://tensorflow.rstudio.com/keras/">keras</a> and <a href="https://tensorflow.rstudio.com/tfestimators/">tfestimators</a>. You can also use the packages <a href="https://tensorflow.rstudio.com/tools/tfdatasets/articles/introduction.html">tfdatasets</a> (create scalable input pipelines), <a href="https://tensorflow.rstudio.com/tools/tfdeploy/articles/introduction.html">tfdeploy</a> (deploy models), and <a href="https://tensorflow.rstudio.com/tools/tfruns/articles/overview.html">tfruns</a> (track, visualize and manage training runs). These packages provide you with a complete tool chain for end-to-end data preparation, model training and deployment.</p></li>
+
+                                                <li><p>RStudio desktop and server has great tooling to make development easy - you can easily track, visualize and manage TensorFlow training runs.</p></li>
+
+                                                <li><p>Deploy and publish your TensorFlow models to a variety of platforms, including <a href="https://tensorflow.rstudio.com/tools/cloudml/articles/getting_started.html">Google CloudML</a>, <a href="https://www.paperspace.com/ml">Paperspace</a> and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.</p></li>
+
+                                            </ol>
+
+                                            <p>R packages: tensorflow, keras, tfestimators, tfdatasets, tfruns, tfdeploy, cloudml</p>
+
+                                            <p>References: - R Interface to TensorFlow (website). https://tensorflow.rstudio.com/ - Chollet and Allaire, Deep Learning with R (2018): https://www.amazon.com/Deep-Learning-R-Francois-Chollet/dp/161729554X</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-66">
+                                        <td>
+                                            Predicting the winner of the 2018 FIFA World Cup predictions
+                                        </td>
+                                        <td>Claus Thorn Ekstrøm</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>The 2018 FIFA World Cup will be played in Russia this summer. The World Cup is the source of almost endless predictions about the winner and the results of the individual matches.</p>
+
+                                            <p>Different statistical models form the basis for predicting the result of individual matches. We present an R framework for comparing different prediction models and for comparing predictions about the World Cup results. Everyone is encouraged to contribute their own function to make predictions for the result of the 2018 World Cup.</p>
+
+                                            <p>Each contributer will be shown how to provide two functions: a function that predicts the final score for a match between two teams with skill levels <span class="math inline"><em>a</em><sub>1</sub></span> and <span class="math inline"><em>a</em><sub>2</sub></span>, and a function that updates the skill levels based on the results of a given match. By supplying these two functions to the R framework the prediction results can be compared and the winner of the best football predictor can be found when the 2018 World Cup finishes.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-21">
+                                        <td>
+                                            Markov-Switching GARCH Models in R: The MSGARCH Package
+                                        </td>
+                                        <td>David Ardia<br>
+                                            Bluteau<br> K.<br> Boudt<br> K.<br> Catania<br> L.<br> Trottier<br> D.-A.
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>We describe the package MSGARCH, which implements Markov-switching GARCH models in R with efficient C object-oriented programming. Markov-switching GARCH models have become popular methods to account for regime changes in the conditional variance dynamics of time series. The package MSGARCH allows the user to perform simulations as well as Maximum Likelihood and MCMC/Bayesian estimations of a very large class of Markov-switching GARCH-type models. The package also provides methods to make single-step and multi-step ahead forecasts of the complete conditional density of the variable of interest. Risk management tools to estimate conditional volatility, Value-at-Risk and Expected Shortfall are also available. We illustrate the broad functionality of the MSGARCH package using exchange rate and stock market return data.</p>
+
+                                            <p>R packages: MSGARCH</p>
+
+                                            <p>References: - Ardia et al. (2017) https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2845809 - MSGARCH package https://cran.r-project.org/web/packages/MSGARCH/index.html</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-76">
+                                        <td>
+                                            Speeding up R with Parallel Programming in the Cloud
+                                        </td>
+                                        <td>David Smith</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>There are many common workloads in R that are &quot;embarrassingly parallel&quot;: group-by analyses, simulations, and cross-validation of models are just a few examples. In this talk I'll describe the doAzureParallel package, a backend to the &quot;foreach&quot; package that automates the process of spawning a cluster of virtual machines in the Azure cloud to process iterations in parallel. This will include an example of optimizing hyperparameters for a predictive model using the &quot;caret&quot; package.</p>
+
+                                            <p>R packages: doAzureparallel, foreach, caret</p>
+
+                                            <p>References: - doAzureParallel: https://github.com/Azure/doAzureParallel</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-128">
+                                        <td>
+                                            radii.defer: Deferred execution of nested functions
+                                        </td>
+                                        <td>Dénes Tóth<br>
+                                            Balázs Urbán
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Suppose you develop a graphical user interface which allows the user to create interactive, multi-facetted and/or multi-page charts which visualize the results of arbitrary statistical analyses. To create the charts, you query the data from a database, perform statistical computation on it, repeat it for several data chunks, and plot the results. Suppose the main performance bottleneck is the download of data. Also suppose that the user can modify the parameters of a chart several times before actually requesting the final plot. Welcome to the world of <em>radii.defer</em>, an <strong>R</strong> package by which you can create a nested chain of arbitrary (unevaluated) <strong>R</strong> functions. A <em>Defer</em> object contains a function and its arguments, and a caching scheme. The arguments of a <em>Defer</em> function may be not only standard <strong>R</strong> objects but other (usually unevaluated) <em>Defer</em> objects as well, and the arguments can be updated whenever you wish. When a <em>Defer</em> object is executed, it does not execute any of its <em>Defer</em> arguments unless it is absolutely necessary. Furthemore, <em>radii.defer</em> plays well with the <em>future</em> package allowing asynchronous execution which does not block the main <strong>R</strong> thread. In the talk we will present the main features of the package, and as an example, we will illustrate its use in a complex, cloud-based <em>Shiny</em> application which motivated the development of the package.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-67">
+                                        <td>
+                                            A recipe for recipes
+                                        </td>
+                                        <td>Edwin Thoen</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <h2 id="a-recipe-for-recipes">A recipe for recipes</h2>
+
+                                            <p>The <code>recipes</code> package (Kuhn and Wickham, 2018) is a set of “Preprocessing Tools to Create Design Matrices”. It delivers a framework in which preprocessing steps on one or more variables are captured in individual objects, called <code>steps</code> and <code>checks</code>. The former do transformations on variables, the latter assert that expectations about the variables are met. A <code>recipe</code> object is created on a train set, to which the <code>steps</code> and <code>checks</code> are added one by one. Once the recipe is done, the <code>prep</code> method is used to estimate all the relevant statistics from the variables. Finally, the actual transformations are applied to data sets using the <code>bake</code> function on the recipe. New data, such as test sets or future observations to score, also run through the recipe via bake. This ensures that the exact same preparation is used on all data sets.</p>
+
+                                            <p>To leverage <code>recipes</code> fully, one should add their own <code>steps</code> and <code>checks</code> to the ones that are shipped with the package. However, whereas the use of the package is intuitive and quick to pick up, writing custom <code>steps</code> and <code>checks</code> requires some understanding of the package inner workings. In this talk I will give a quick introduction to the package and I will elaborate on how to create your own <code>steps</code> and <code>checks</code>. Providing a framework, or if you like a recipe, for them. After attending this talk you should be able to create your own steps and checks.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-100">
+                                        <td>
+                                            validatetools: resolve and simplify contradictive or redundant data validation rules.
+                                        </td>
+                                        <td>Edwin de Jonge</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Using many rules to check the validity of your data often results in a large collection of rules that may generate unwanted interactions. This may seem obvious, but often happens (unknowningly). validatetools helps detecting and resolving accumulated redundant or (partially) contradictory rules. We will demonstrate the included methods as well as describe the inner workings of detecting and resolving the issues with Mixed Integer Programming.</p>
+
+                                            <p>packages: <code>validate</code>, <code>validatetools</code></p>
+
+                                            <p>References: - Statistical Data Cleaning with Applications in R, Wiley, 2018, M. van der Loo, E. de Jonge</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-19">
+                                        <td>
+                                            Interactivity meets Reproducibility: the ideal way of doing RNA-seq analysis
+                                        </td>
+                                        <td>Federico Marini<br>
+                                            Harald Binder
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Next generation sequencing technologies, such as RNA-Seq, generate tens of millions of reads to quantify the expression levels of the features of interest. A wide number and variety of software packages have been developed for accommodating the needs of the researchers, mostly in the R/Bioconductor framework. Many of these focus on the identification of differentially expressed (DE) genes (<code>DESeq2</code>, <code>edgeR</code>, ) to discover quantitative changes between experimental groups, while other address alternative splicing, discovery of novel transcripts, or RNA editing. Moreover, Exploratory Data Analysis is a common step to all these workflows, and despite its importance for generating highly reliable results, it is often neglected, as many of the steps involved might require a considerable proficiency of the user in the programming languages. Principal Components Analysis (PCA) is used often to obtain a dimension-reduced overview of the data.</p>
+
+                                            <p>Our proposal addresses the two steps of Exploratory Data Analysis and Differential Expression analysis with two different Bioconductor packages, <code>pcaExplorer</code> and <code>ideal</code>. We developed web applications in the Shiny framework also including support for reproducible analyses, thanks to an embedded text editor and a template report, to seamlessly generate HTML documents as a result of the user’s exploration.</p>
+
+                                            <p>This solution, which we also outlined in (Marini and Binder 2016), serves as a practical proof of principle of integrating the essential features of interactivity and reproducibility in the same tool, fitting both the needs of life scientists and experienced analyists, thus making our packages good candidates to become companion tools for each RNA-Seq analysis, and also serving as a base for the development of other applications (e.g. for single cell RNA-seq).</p>
+
+                                            <p><strong>References</strong></p>
+
+                                            <p>Marini and Binder 2016 - Development of Applications for Interactive and Reproducible Research: a Case Study. Genomics and Computational Biology</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-5">
+                                        <td>
+                                            Nonlinear mixed-effects models in R
+                                        </td>
+                                        <td>Francois Mercier</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Mixed-effect models are commonly used when data consist of clusters of observations. If the model is nonlinear in the parameters, nonlinear mixed-effects (NLME) models are considered. Growth or shrinkage data where the change trajectory is nonlinear is a common type of data modeled with NLME models, with the subject treated as a cluster and the repeated measurements as the individual observations nested within the cluster. Ordinary differential equations (ODEs) provide a natural framework to describe dynamic systems but sometimes they accept closed-form solutions.</p>
+
+                                            <p>In the recent years, a number of R packages have been created to fit NLME models using various approaches. These are the <em>nlme</em> (Pinheiro et al. 2017), <em>saemix</em> (Comets et al. 2017), <em>nlmixr</em> (Wang et al. 2017), and <em>brms</em> (Buerkner et al. 2016) packages; .each of them has its own specificities. In this talk, we compare the features (algorithms, grammar, documentation, examples), advantages (predictions, embedded model diagnostic tools), and limitations (scope, computational time, dependencies and other constraints) of these 4 solutions.</p>
+
+                                            <p>To illustrate this analysis, we consider two examples taking from the pharmaceutical industry. The first one is a real case of pharmacokinetic data measured in a small number of subjects (N&lt;40), followed up for a long period of time with a rich sampling scheme (more than 8 assessment time points). The second one is a real case of longitudinal tumor size data measured in a large number of solid cancer patients (N&gt;100), followed up for a short period of time (with a median of 4 assessment time points).</p>
+
+                                            <p>R packages: <em>nlme</em>, <em>saemix</em>, <em>nlmixr</em>, <em>brms</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-3">
+                                        <td>
+                                            Wikidata Concepts Monitor: R in action across Big Wikidata
+                                        </td>
+                                        <td>Goran Milovanović</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Wikidata, one of the most prominent Wikimedia projects nowadays, presents a formal ontology that adheres to the RDF standard. All Wikimedia projects (Wikipedia, Wiktionary, Wikivoyage, Wikimedia commons, etc) can reach out to and make use of Wikidata by relying on the features of MediaWiki and Wikibase. Currently, more than 800 Wikimedia websites - some of which are found among the most dynamic places online at all - maintain a client-side Wikidata usage tracking. The resulting data sets present a challenging Big Data problem that calls for SQL transfers to Hadoop via Apache Sqoop, massive HiveQL ETL operations and data wrangling in R just in order to enable for the tracking and analytics of individual Wikidata item usage statistics across the Wikimedia projects.</p>
+
+                                            <p>The Wikidata Concepts Monitor (WDCM) system was developed in R to orchestrate various technologies (SPARQL to access Wikidata, SQL, Apache Sqoop, Hive, and Spark) in order to provide for Wikidata usage tracking and analytics. The WDCM then takes a step beyond and performs machine learning (LDA, t-SNE) across the matrices that encompass Wikidata items and Wikimedia projects in order to gain insight into the distributive semantics (i.e. topic models, dimensionality reduction for similarity maps) of Wikidata usage. The system encompasses a set of Shiny dashboards where the results of the WDCM statistical machinery are visualized and tools for analytical work provided in order to help the understanding of the utterly complex social and behavioral phenomenon of Wikidata usage.</p>
+
+                                            <p>References:</p>
+
+                                            <ul>
+
+                                                <li>WDCM Portal: http://wdcm.wmflabs.org/</li>
+
+                                                <li>Wikitech: Wikidata Concepts Monitor (WDCM). The WDCM technical documentation. URL: https://wikitech.wikimedia.org/wiki/Wikidata_Concepts_Monitor</li>
+
+                                                <li>Wikidata Concepts Monitor (WDCM). The WDCM Wikidata wiki project page. URL: https://www.wikidata.org/wiki/Wikidata:Wikidata_Concepts_Monitor</li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-98">
+                                        <td>
+                                            Modelling Item Worth Based on Rankings
+                                        </td>
+                                        <td>Heather Turner<br>
+                                            Ioannis Kosmidis<br> David Firth<br> Jacob van Etten
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Given a set of rankings, for example the finishing orders in a set of races or consumer preferences from market research, we are often interested in estimating the underlying worth of the items being ranked. A well-established approach is to fit a Plackett-Luce model, jointly attributed to Plackett (1975) and Luce (1959).</p>
+
+                                            <p>This talk introduces a new package, <strong>PlackettLuce</strong>, for fitting the Plackett-Luce model to rankings data. In contrast to some of the other packages or approaches to fitting the model in R, <strong>PlackettLuce</strong> can efficiently handle all of the following:</p>
+
+                                            <ul>
+
+                                                <li>ties in the rankings;</li>
+
+                                                <li>rankings of only a subset items;</li>
+
+                                                <li>clustered rankings (rankings for distinct sets of items), and</li>
+
+                                                <li>one or more items that are always ranked first or last in their rankings.</li>
+
+                                            </ul>
+
+                                            <p><strong>PlackettLuce</strong> also enables inference on the worth estimates by providing model-based standard errors and a method for obtaining quasi-standard errors, which don't depend on the identifiability constraints.</p>
+
+                                            <p>Another key feature of the package is a method for fitting Plackett-Luce trees, which will be illustrated in a novel application to identify growing conditions for which trial varieties of bean plants have significantly different worth values.</p>
+
+                                            <p>References: - Luce, R. Duncan (1959): Individual Choice Behavior: A Theoretical Analysis. https://doi.org/10.2307/2282347. - Plackett, Robert L. (1975): The Analysis of Permutations. Appl. Statist 24 (2):193–202. https://doi.org/10.2307/2346567. - Heather Turner, Ioannis Kosmidis and David Firth (2018): PlackettLuce: Plackett-Luce Models for Rankings. R package version 0.2-2. https://CRAN.R-project.org/package=PlackettLuce</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-83">
+                                        <td>
+                                            The essentials to work with object-oriented systems in R
+                                        </td>
+                                        <td>Ildiko Czeller</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>All R users have used S3, the oldest and most prominent object-oriented system in R even if they were unaware of it, for example by using the summary function both for data frames and for linear models. The two main building blocks of an object-oriented system are objects with specific type (class) and functions (methods) which behave differently depending on the class of their parameters. Most R users probably also had an experience where they got unexpected results which would have been easier to understand with a foundation in object-oriented systems in R. This talk aims to fill some of the gaps so that you can work confidently with existing code utilizing S3 or S4.</p>
+
+                                            <p>The three widely used object-oriented systems are S3, S4 and R6. This talk will focus on S3 which is the most widely used and assume no prior knowledge of object-oriented systems. I will start with a visual explanation of the most important concepts and then I will show you how understanding the basics can help you in your day-to-day work. I will guide you with examples and show hands-on tricks to understand, debug and get the documentation of existing code utilizing S3 or S4.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-22">
+                                        <td>
+                                            Predicting Cryptocurrencies Time–Series with the eDMA package
+                                        </td>
+                                        <td>Leopoldo Catania</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Cryptocurrencies have recently gained a lot of interest from investors, central banks and governments worldwide. The lack of any form of political regulation and their market far from being “efficient”, requires new forms of regulation in the near future. In this paper we study the predictability of cryptocurrencies time–series. We perform a Dynamic Model Averaging analysis using many predictors leading us to more than 31 millions of Dynamic Linear Models estimated at each point in time during the forecast horizon. The whole analysis and the associated huge computational complexity relies on the eDMA package of Catania and Nonejad [2017, Journal Statistical Software, (in press)] available in the R environment. Results are reported for the four most representative coins and indicate different levels of predictability depending on: i) the time period, ii) forecast horizon, iii) and type of coin. A Portfolio optimization application shows that trading strategies which incorporate cryptocurrencies are profitable even after the inclusion of transaction costs.</p>
+
+                                            <p>R packages: eDMA</p>
+
+                                            <p>References: - Catania and Nonejad (2018): Dynamic Model Averaging for Practitioners in Economics and Finance: The eDMA Package</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-106">
+                                        <td>
+                                            Harness the R condition system
+                                        </td>
+                                        <td>Lionel Henry</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Among the many unusual features of the R language, the condition system is probably one of the most obscure. While it is mainly used for exception handling, it is much more powerful and general. This presentation will get advanced R programmers up to speed on the difference between messages and printed output, the difference between exiting and inplace handlers, how does condition muffling work (e.g. <code>suppressWarnings()</code> and <code>suppressMessages()</code>), how to implement error recovery, and how to use error objects to make unit testing more robust and to pass useful metadata to error handlers.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-73">
+                                        <td>
+                                            Multi-state churn analysis with a subscription product
+                                        </td>
+                                        <td>Marcin Kosiński<br>
+                                            Thomas Vladeck<br> Kyle Block
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Subscriptions are no longer just for newspapers. The consumer product landscape, particularly among e-commerce firms, includes a bevy of subscription-based business models. Internet and mobile phone subscriptions are now commonplace and joining the ranks are dietary supplements, meals, clothing, cosmetics and personal grooming products.</p>
+
+                                            <p>Standard metrics to diagnose a healthy consumer-brand relationship typically include customer purchase frequency and ultimately, retention of the customer demonstrated by regular purchases. If a brand notices that a customer isn’t purchasing, it may consider targeting the customer with discount offers or deploying a tailored messaging campaign in the hope that the customer will return and not “churn”.</p>
+
+                                            <p>The churn diagnosis, however, becomes more complicated for subscription-based products, many of which offer multiple delivery frequencies and the ability to pause a subscription. Brands with subscription-based products need to have some reliable measure of churn propensity so they can further isolate the factors that lead to churn and preemptively identify at-risk customers.</p>
+
+                                            <p>During the presentation I’ll show how to analyze churn propensity for products with multiple states, such as different subscription cadences or a paused subscription. If the time allows I’ll also present useful plots that provide deep insights during such modeling, that we have developed at Gradient Metrics - a quantitative marketing agency (http://gradientmetrics.com/).</p>
+
+                                            <p>R packages: survminer, survival</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-96">
+                                        <td>
+                                            Not all that Shiny by default
+                                        </td>
+                                        <td>Mikołaj Olszewski<br>
+                                            Mateusz Otmianowski
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Shiny is a popular web application framework that allows to quickly build analytical dashboards using only R. It has many great built-in features that address the needs of most of users. But, what if you need to go beyond that and build custom solutions packed with features that are not available straight away? How far can you push Shiny without breaking it?</p>
+
+                                            <p>It turns out that quite far. In the Exploratory Data Science team at Pearson, we use Shiny to create self-serve analytical tools for internal clients. While we create these tools based on initial requirements, we often need to be able to add additional features as the tool matures. This forces us to think outside the box about how we can build upon the framework offered by Shiny.</p>
+
+                                            <p>In this talk, we’ll present our most complex Shiny app yet. We’ll talk about the process we went through while building it, from prototyping through development, user testing, and deployment. We will cover advanced features of Shiny (e.g. a modularised application structure), communication between Shiny server and JavaScript, as well as sophisticated UI solutions (e.g. click drilldowns, interactive tutorials and custom welcome screens). Most importantly, we will cover what we have learned through rounds of usability testing that entirely changed our approach to data application design.</p>
+
+                                            <p>R packages: shiny</p>
+
+                                            <p>References: - Winston Chang, Joe Cheng, JJ Allaire, Yihui Xie and Jonathan McPherson (2017). shiny: Web Application Framework for R. R package version 1.0.5. https://CRAN.R-project.org/package=shiny</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-53">
+                                        <td>
+                                            openSTARS: prepare GIS data for regression analysis on stream networks
+                                        </td>
+                                        <td>Mira Kattwinkel<br>
+                                            Ralf Schäfer
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Statistical data analysis on stream networks needs to take into account the spatial correlation of measurements sampled at connected stream sites. The <em>SSN</em> package for Spatial Statistical Modeling on Stream Networks provides tools to fit glms with spatial autocorrelation. However, so far the tool ‘STARS’ provided for GIS data preparation is based on the commercial software ArcGIS. <em>openSTARS</em> offers an alternative in <strong>R</strong> based on open source GRASS GIS and R packages for spatial data. Thereby it merges the whole work flow of data preparation and statistical analysis on stream networks in one software. <em>openSTARS</em> provides functions to derive stream networks from a digital elevation model, detect and correct non-dichotomous junctions, which cannot be handled by <em>SSN</em>, derive stream catchments and intersect them with land use or other GIS data as potential explanatory variables. Additionally, locations for model predictions can be generated along the stream network. We exemplify the application of <em>openSTARS</em> for water quality monitoring data.</p>
+
+                                            <p>Packages: openSTARS, SSN, rgrass7</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-68">
+                                        <td>
+                                            Data Culture in Practice
+                                        </td>
+                                        <td>Noa Tamir</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Every company wants to be data driven, but not everyone in the organization is going to be trained in data science and analytics, just as not everyone codes, designs or writes contracts. So how do we get to a point where we have a data driven organizational culture without teaching everybody statistics and R? In this talk Noa will present some strategies and examples to get you started on build you own data culture.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-65">
+                                        <td>
+                                            Fitting Humans Stories in List Columns: Cases From an Online Recruitment Platform
+                                        </td>
+                                        <td>Omayma Said</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>When designing products and taking data-informed decisions, the stories of individuals are often obscured by the tendency to focus solely on aggregated data and models. This talk will focus on the paradigm I embrace, and the tools I build on top of the tidyverse packages, to combat this tendency.</p>
+
+                                            <p>At WUZZUF, we provide online career services including job boards, applicant tracking systems, and assessments. I’ll talk about a situation where we observed a low supply of talent for senior software developers jobs, outlining my approach to testing hypotheses about the root causes of the supply/demand imbalance. Rather than reacting to the problem by looking at high-level metrics and jumping to conclusions about the root causes <em>(seen as an acquisition issue by marketers or a recommendation issue by engineers)</em>, I started a deeper analysis, oriented by job hunting and hiring as human experiences.</p>
+
+                                            <p>The tidyverse tools enabled me to see the stories of individuals while maintaining context through the patterns of groups. I’ll highlight how combining <code>tidyr</code>, <code>purrr</code>, list columns, and 'shiny' let me go beyond the preliminary assumptions and reveal deeper issues. At the end, this led to actionable insights regarding our search/recommendation, talent acquisition and job postings.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-60">
+                                        <td>
+                                            Geocomputation for Active transport planning: a case study of cycle network design
+                                        </td>
+                                        <td>Robin Lovelace</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Although it has academic origins, R is now widely used for many real-world applications including finance, epidemiology, store location analysis and conservation. Indications suggest that the language continues to gain adoption in other areas due to its advantages of cost, reproducibility and flexibility over proprietary products. This talk will explore the potential uptake of R for transport planning, a domain in which powerful yet accessible scriptable languages have much to offer. Transport planning relies on data analysis, a range of spatial and temporal data forms, and visualisation, areas that R excels in, especially with add-on packages such as <strong>sf</strong>. To illustrate the point the talk will describe work commissioned by the UK's Department for Transport to develop a Propensity to Cycle Tool (PCT). The PCT is now being used around England to help design strategic cycle networks and improve the effectiveness of precious public investment in transport infrastructure (Lovelace et al. 2017). Based on the experience developing the PCT we will discuss the limitations of R as a tool for transport planning, and the potential of recent developments in packages such as <strong>stplanr</strong> and <strong>dodgr</strong> packages to address them (Lovelace and Ellison, under review). The talk will conclude by outlining reasons for transport planning authorities to demand the use of open source software and reproducibility to ensure democratic accountability and the cost-effective use of public funds.</p>
+
+                                            <p>R packages: sf, stplanr, dodgr</p>
+
+                                            <p>References:</p>
+
+                                            <ul>
+
+                                                <li><p>Lovelace, R., Goodman, A., Aldred, R., Berkoff, N., Abbas, A., Woodcock, J., 2017. The Propensity to Cycle Tool: An open source online system for sustainable transport planning. Journal of Transport and Land Use 10. https://doi.org/10.5198/jtlu.2016.862</p></li>
+
+                                                <li><p>Lovelace, R., Ellison, R., under review stplanr: A Package for Transport Planning. The R Journal.</p></li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-81">
+                                        <td>
+                                            Sparsity with multi-type Lasso regularized GLMs
+                                        </td>
+                                        <td>Sander Devriendt<br>
+                                            Katrien Antonio<br> Edward Frees<br> Tom Reynkens
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Current datasets often contain many variables. To cope with this, sparse regression methods have been developed to obtain more interpretable and better performing models than their classical counterparts. Standard regularization methods such as the Lasso or Elastic Net are already implemented in <em>R</em> to obtain sparse GLM results. However, variables often have different structural properties demanding different regularization techniques to obtain logical results. We propose a multi-type Lasso approach to solve this problem, where coefficients of different variables can be regularized by different penalties. Our proposed estimation procedure uses the theory of proximal to split the objective function into smaller subproblems. Each of these subproblems will only contain one penalty such that existing algorithms can be applied. We show how this setup is implemented in <em>R</em> and how different tools and packages work together to get the most out of our approach. The setup is being implemented in an <em>R</em> package where bottleneck calculations happen in <em>C++</em> through the <em>Rcpp</em> API.</p>
+
+                                            <p>R packages: mgcv, Rcpp, RcppArmadillo, speedglm, glmnet, parallel</p>
+
+                                            <p>References: - Gertheiss, J. and Tutz, G. (2010). <em>Sparse modeling of categorical explanatory variables</em>. The Annals of Applied Statistics, 4(4), 2150-2180. - Hastie, T., Tibshirani, R. and Wainwright, M. (2015). <em>Statistical learning with sparsity: the Lasso and generalizations</em>. Chapman and Hall/CRC Press. - Parikh, N. and Boyd, S. (2013). <em>Proximal algorithms</em>. Foundations and Trends in Optimization, 1(3), 123-231.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-150">
+                                        <td>
+                                            Exploiting Spark for high-performance scalable data engineering and data-science on Microsoft Azure
+                                        </td>
+                                        <td>Simon Field</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>Spark has become an incredibly popular data processing engine to support scalable data science. There are several R packages that abstract Spark processing from R. Microsoft Azure provides several different options for working R on Spark depending optimised for different needs. In this session we will outline the options and best-practices regarding which one to use when. We will provide some examples of using different packages with Spark in Azure.</p>
+
+                                            <p>R packages: SparkR, SparklyR, dplyr, rSparkling, RevoScaleR</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-122">
+                                        <td>
+                                            bamlss.vis - an R package for interactively visualising distributional regression models
+                                        </td>
+                                        <td>Stanislaus Stadlmann</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>A newly emerging field in statistics is distributional regression, where not only the mean but each parameter of a response distribution can be modeled using a set of predictors (Klein et al., 2015). Notable frameworks called Generalized Additive Models for Location, Scale and Shape and Bayesian Additive Models for Location, Scale and Shape were introduced by Rigby and Stasinopoulos (2001) in the form of a frequentist perspective and Umlauf, Klein, and Zeileis (2017) using a Bayesian approach, respectively. In distributional regression models, the interpretation of covariate effects on response moments and the expected conditional response distribution is more difficult than with traditional methods such as Ordinary Least Squares (OLS) or Generalized Linear Models (GLM) since the moments of a distribution often do not directly equate the modeled parameters but are rather a combination of them with a varying degree of complexity. This talk will introduce a framework for the visualization of distributional regression models fitted using the bamlss R package (Umlauf et al., 2017) as well as feature an implementation as an R extension titled bamlss.vis. The main goals of this framework are the abilities to: 1. See and compare the expected distribution for chosen sets of covariates 2. View the direct relationship between moments of the response distribution and a chosen explanatory variable, given a set of covariates. Additionally, the user can obtain the code which created the visualizations described above to potentially reproduce them later.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-51">
+                                        <td>
+                                            Estimating the maximum possible earthquake magnitude using extreme value methodology: the Groningen case
+                                        </td>
+                                        <td>Tom Reynkens<br>
+                                            Jan Beirlant<br> Andrzej Kijko<br> John H.J. Einmahl
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>The area-characteristic, maximum possible earthquake magnitude is required by the earthquake engineering community, disaster management agencies and the insurance industry. The Gutenberg-Richter law predicts that earthquake magnitudes follow a truncated exponential distribution. In the geophysical literature several parametric and non-parametric estimation procedures were proposed. Estimation of the maximum possible earthquake magnitude is of course an extreme value problem to which classical methods for endpoint estimation could be applied. However, recent extreme value theory (EVT) methods for truncated tails at high levels constitute a more appropriate setting for this estimation problem. In this talk, we use the methods from the extreme value and geophysical literature to estimate the maximum possible magnitude of earthquakes induced by gas extraction in the Groningen province of the Netherlands. Moreover, a <strong>Shiny</strong> application has been developed (https://treynkens.shinyapps.io/Groningen_app/) to let users perform the analysis where they can e.g. change the considered time period.</p>
+
+                                            <p>All considered EVT-based endpoint estimators are implemented in the <strong>ReIns</strong> package which complements the book &quot;Reinsurance: actuarial and statistical aspects&quot;. In addition to EVT tools to deal with truncated data, <strong>ReIns</strong> provides implementations of classical EVT plots and estimators, and EVT methods that handle censored data.</p>
+
+                                            <p>R packages: ReIns, shiny</p>
+
+                                            <p>References: - Albrecher H., Beirlant J., and Teugels J. (2017). <em>Reinsurance: Actuarial and Statistical Aspects</em>. Wiley, Chichester. - Beirlant J., Kijko A., Reynkens T., and Einmahl J.H.J. (2018). “Estimating the Maximum Possible Earthquake Magnitude Using Extreme Value Methodology: The Groningen Case.” <em>Natural Hazards</em>, accepted. https://doi.org/10.1007/s11069-017-3162-2. - Reynkens T. and Verbelen R. (2017). <em>ReIns: Functions from &quot;Reinsurance: Actuarial and Statistical Aspects&quot;.</em> https://CRAN.R-project.org/package=ReIns</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-125">
+                                        <td>
+                                            Machine Learning (ranger package) as a framework for spatial and spatiotemporal prediction
+                                        </td>
+                                        <td>Tomislav Hengl<br>
+                                            Tom Hengl<br> Marvin Wright<br> Madlene Nussbaum
+                                        </td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>We describe a framework to use Random Forest to generate spatial and spatiotemporal predictions i.e. as an alternative to model-based geostatistics. Spatial auto-correlation, especially if still existent in the cross-validation residuals, indicates that the predictions are maybe biased, and this is sub-optimal. To account for this, we use Random Forest (as implemented in the ranger package) in combination with geographical distances to sampling locations to fit models and predict values. We describe eight typical situations of interest to spatial prediction applications: (1) prediction of 2D continuous variable without any covariates, (2) prediction of 2D variable with covariates, (3) prediction of binomial variable, (4) prediction of categorical variable, (5) prediction of variables with extreme values, (6) weighted regression, (7) predictions of multivariate problems, and (8) prediction of spatiotemporal variable. Our results indicate that RFsp can produce comparable results to model-based geostatistics. The advantage of RFsp over model-based geostatistics is that RFsp requires much less statistical assumptions and is easier to automate (and scale up through parallelization). On the other hand, computational intensity of RFsp can blow up as the number of training points and covariates increases. RFsp is still an experimental method and application with large data sets (&gt;&gt;200 spatial locations) is probably not recommended. To download all data sets and more detail code examples please refer to https://github.com/thengl/GeoMLA/</p>
+
+                                            <p>R packages: ranger, GSIF, caret, rgdal, geoR, gstat</p>
+
+                                            <p>References: - Hengl, T., Nussbaum, M., Wright, M. and Heuvelink, G.B.M., 2018? Random Forest as a Generic Framework for Predictive Modeling of Spatial and Spatio-temporal Variables, PeerJ (submitted). - Wright, M. N., &amp; Ziegler, A. (2017). ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. Journal of Statistical Software, 77(1), 1–17.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="talk" id="talk-2-27">
+                                        <td>
+                                            Know your R usage workflow to handle reproducibility challenges
+                                        </td>
+                                        <td>Wit Jakuczun</td>
+                                        <td class="point-to-schedule"><i class="icon-calendar"></i></td>
+                                    </tr>
+                                    <tr class="abstract">
+                                        <td colspan="3">
+                                            <p>R is used in a vast ways. From pure ad-hoc by hobbysts to an organized and structured way in an enterprise. Each way of R usage brings different reproducibility challenges. Going through range of typical workflows we will show that understanding reproducibility must start with understanding your workflow. Presenting workflows we will show how we deal reproducibiilty challenges with open-source R Suite (http://rsuite.io) solution developed by us to support our large scale R development.</p>
+
+                                            <p>R packages: rsuite, packrat, miniCRAN, checkpoint</p>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                            <h4 style="margin-top: 10px;">Lighning talks</h4>
+
+                            <table class="table table-hover left-table">
+                                <thead>
+                                    <tr>
+                                        <th width="75%">Title</th>
+                                        <th>Speaker(s)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    TODO
+
+                                </tbody>
+                            </table>
+
+                            <h4 style="margin-top: 10px;">Shiny demos</h4>
+
+                            <table class="table table-hover left-table">
+                                <thead>
+                                    <tr>
+                                        <th width="75%">Title</th>
+                                        <th>Speaker(s)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    TODO
+
+                                </tbody>
+                            </table>
+
+                            <h4 style="margin-top: 10px;">Posters</h4>
+
+                            <table class="table table-hover left-table">
+                                <thead>
+                                    <tr>
+                                        <th width="75%">Title</th>
+                                        <th>Speaker(s)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    TODO
 
                                 </tbody>
                             </table>
