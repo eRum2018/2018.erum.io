@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    // $('div.affixdiv').attr('data-offset-top', $('#topheader div img').height());
+    $('div.affixdiv').affix({
+        offset: {
+            top: $('#topheader div img').height() + 200
+        }
+    }); 
+    
     // popup bio for speakers
     $('.speaker').each(function() {
 	      var $this = $(this);
