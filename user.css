@@ -114,7 +114,7 @@ section {
     .subhead h1 {
 	font-size: 32px;
     }
-    
+
     .subhead p {
 	font-size: 24px;
 	font-weight: 300;
@@ -407,4 +407,8 @@ table.schedule td {
 }
 .point-to-schedule {
     cursor: pointer;
+}
+
+.smaller-speaker .speaker .speaker-name {
+    font-size: 1.7em;
 }
