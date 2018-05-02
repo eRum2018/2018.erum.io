@@ -222,6 +222,11 @@ section {
     margin-left: 25px;
     margin-right: 25px;
 }
+.schedule-sponsor {
+    max-width: 200px;
+    max-height: 50px;
+    margin: 15px;
+}
 
 .talk {
     color: #08c;
@@ -391,7 +396,11 @@ table.schedule td ul {
 table.schedule td {
     overflow: hidden;
 }
-
+.notrcolor {
+    background-color: white !important;
+    color: black !important;
+    padding-top: 10px;
+}
 
 .nav>li>ul>li>a:hover {
     text-decoration: none;
